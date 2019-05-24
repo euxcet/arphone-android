@@ -1,4 +1,4 @@
-package com.example.euxcet.arphone_android;
+package com.example.alice.appforphone;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("come.example.euxcet.arphone_android", appContext.getPackageName());
+        assertEquals("com.example.alice.appforphone", appContext.getPackageName());
     }
 }

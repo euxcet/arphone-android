@@ -1,4 +1,4 @@
-package com.example.euxcet.arphone_android;
+package com.example.alice.appforphone;
 
 import org.junit.Test;
 

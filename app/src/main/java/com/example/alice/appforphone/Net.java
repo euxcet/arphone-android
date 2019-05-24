@@ -1,4 +1,4 @@
-package com.example.euxcet.arphone_android;
+package com.example.alice.appforphone;
 
 import android.graphics.Bitmap;
 
@@ -19,6 +19,9 @@ class WriteBytesRunnable implements Runnable {
     }
     public void run() {
         try {
+            System.out.println(data);
+            if(os==null)
+                System.out.println("ERROR:os is null");
             os.write(data, 0, size);
         }
         catch(Exception e) {
@@ -46,6 +49,8 @@ public class Net {
                 }
                 socket = new Socket(ip, port);
                 os = new DataOutputStream(socket.getOutputStream());
+                if(os==null)
+
                 is = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             }
             catch(Exception e) {
@@ -217,6 +222,25 @@ public class Net {
         sendByte((byte)4);
         sendShort((short)x);
         sendShort((short)y);
+        sendByte((byte)100);
+    }
+
+    public void sendSelect(int index,double y)
+    {
+        sendByte((byte)8);
+        sendByte((byte)index);
+        int sendY=(int)y*255;
+        System.out.println("[send Select] "+sendY);
+        sendByte((byte)sendY);
+        sendByte((byte)100);
+    }
+
+    public void sendBallPos(int flag,int x,int y)
+    {
+        sendByte((byte)9);
+        sendByte((byte)flag);
+        sendByte((byte)x);
+        sendByte((byte)y);
         sendByte((byte)100);
     }
 }
