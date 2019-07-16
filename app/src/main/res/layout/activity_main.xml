@@ -36,7 +36,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="192.168.31.218"
+                android:text="192.168.31.184"
                 tools:layout_editor_absoluteX="131dp"
                 tools:layout_editor_absoluteY="82dp" />
         </LinearLayout>

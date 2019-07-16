@@ -28,6 +28,12 @@ public class NavigationActivity extends AppCompatActivity {
         startActivityForResult(intent, RESULT_LOAD_IMAGE);
     }
 
+    public void toHomeActivity(View v) {
+        Intent intent = new Intent();
+        intent.setClass(NavigationActivity.this, HomeActivity.class);
+        startActivity(intent);
+    }
+
     private void toImageActivity(Intent intent) {
         intent.setClass(NavigationActivity.this, ImageActivity.class);
         startActivity(intent);

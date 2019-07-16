@@ -4,20 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavigationActivity">
+    tools:context=".HomeActivity">
 
-    <!--Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select from Gallery"
-        android:onClick="selectFromGallery"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="193dp" /-->
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:onClick="toHomeActivity"/>
+        android:text="TextView"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="213dp" />
 </android.support.constraint.ConstraintLayout>

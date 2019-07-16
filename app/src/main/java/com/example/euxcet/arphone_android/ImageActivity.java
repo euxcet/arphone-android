@@ -13,7 +13,6 @@ public class ImageActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("Image");
         setContentView(R.layout.activity_image);
         Intent intent = getIntent();
         Uri uri = intent.getData();

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ImageActivity">
 
-    <come.example.euxcet.arphone_android.ZoomImageView
+    <com.example.euxcet.arphone_android.ZoomImageView
         android:id="@+id/zoomImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
